@@ -1,0 +1,44 @@
+fieldLayouts:
+  19f8d874-dc85-41c0-b3b1-ef9d7517beca:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: 24b5aaab-978b-4433-81b0-962143607add
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 93a073f1-2fdd-4f32-b1da-b6b66e7a1cce
+        userCondition: null
+fs: videos
+handle: videos
+name: Videos
+sortOrder: 2
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+transformFs: videos
+transformSubpath: ''

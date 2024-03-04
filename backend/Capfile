@@ -1,0 +1,15 @@
+set :deploy_config_path, 'cap/deploy.rb'
+set :stage_config_path, 'cap/deploy'
+
+# Load DSL and Setup Up Stages
+require 'capistrano/setup'
+
+# Includes default deployment tasks
+require 'capistrano/deploy'
+
+# Includes git handling
+require "capistrano/scm/git"
+install_plugin Capistrano::SCM::Git
+
+# Loads custom tasks from `cap/tasks' if you have any defined.
+Dir.glob('cap/tasks/*.cap').each { |r| import r }

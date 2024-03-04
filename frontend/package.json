@@ -1,0 +1,47 @@
+{
+  "name": "hi-base-vite",
+  "version": "1.0.0",
+  "description": "Starter to build and maintain any website.",
+  "author": "HI Schweiz",
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/hi-schweiz/hi-base-vite"
+  },
+  "license": "UNLICENSED",
+  "main": "src/js/main.js",
+  "scripts": {
+    "setup": ".scripts/setup.sh",
+    "update": ".scripts/update.sh",
+    "clean": "rm -rf ../backend/craft/web/dist/",
+    "watch": "vite",
+    "copy": "mkdir -p ../backend/craft/web/dist/static && cp -r ./static/. ../backend/craft/web/dist/static",
+    "dev": "vite",
+    "build": "yarn clean && vite build"
+  },
+  "dependencies": {
+    "@hi_digital/easy-flex": "^1.0.0",
+    "cross-env": "^7.0.3",
+    "headroom.js": "^0",
+    "sanitize.css": "^13",
+    "swiper": "^11.0.5"
+  },
+  "browserslist": [
+    "> 2% in CH",
+    "last 2 version"
+  ],
+  "devDependencies": {
+    "@vitejs/plugin-legacy": "^3.0.1",
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
+    "postcss-pxtorem": "^6.0.0",
+    "postcss-scss": "^4.0.6",
+    "rollup-plugin-copy": "^3.4.0",
+    "rollup-plugin-critical": "^1.0.12",
+    "rollup-plugin-multi-input": "^1.3.2",
+    "rollup-plugin-scss": "^4.0.0",
+    "sass": "^1.57.1",
+    "terser": "^5.16.1",
+    "vite": "^4.0.0",
+    "vite-plugin-restart": "^0.3.0"
+  }
+}

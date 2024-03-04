@@ -1,0 +1,82 @@
+field: e8ad8253-23c4-4157-8274-03ec257dcfd3 # Accordion
+fieldLayouts:
+  7de1cf52-6eb2-4334-b1e9-78ef11685c98:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: ca3b638b-514e-4632-ba64-0410a1b4ca3b # Accordion Titel
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4535e16d-9bcc-4a64-9c6f-4336c2620c07
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 17d41138-4bf0-4b22-86e8-d485cbec1be8 # Accordion Content
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c206ed2d-f939-4175-b245-97ce73ea674b
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 39e26425-c8fc-4fad-a827-cdf30859eb34
+        userCondition: null
+fields:
+  17d41138-4bf0-4b22-86e8-d485cbec1be8: # Accordion Content
+    columnSuffix: ulavkrck
+    contentColumnType: text
+    fieldGroup: null
+    handle: accordionContent
+    instructions: null
+    name: 'Accordion Content'
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      ckeConfig: e63ecf25-207b-44e7-a7fa-f741c17b8917 # Simple
+      columnType: text
+      defaultTransform: null
+      enableSourceEditingForNonAdmins: false
+      purifierConfig: null
+      purifyHtml: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      showWordCount: false
+      wordLimit: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\ckeditor\Field
+  ca3b638b-514e-4632-ba64-0410a1b4ca3b: # Accordion Titel
+    columnSuffix: dwomsqoh
+    contentColumnType: text
+    fieldGroup: null
+    handle: accordionTitle
+    instructions: null
+    name: 'Accordion Titel'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: accordion
+name: Accordion
+sortOrder: 1

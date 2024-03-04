@@ -1,0 +1,27 @@
+{% set globals = craft.entries.section('globals').one() %}
+{% set privacy = globals.privacyPolicy.one() %}
+
+<div class="consent hide" id="consent-wrapper">
+    <div class="container">
+        <div class="row row-align-center">
+            <div class="gr-20">
+                <p class="consent__text">
+                    {{ "Wir verwenden Cookies auf dieser Webseite."|t }}
+
+                    {%- if privacy -%}
+                        <span>
+                            <a href="{{ privacy.url() }}">{{ "Mehr erfahren"|t }}</a>
+                        </span>
+                    {%- endif -%}
+
+                </p>
+            </div>
+
+            <div class="gr-4">
+                <div class="consent__end">
+                    <button class="consent__btn" id="consent-button">{{ "OK"|t }}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

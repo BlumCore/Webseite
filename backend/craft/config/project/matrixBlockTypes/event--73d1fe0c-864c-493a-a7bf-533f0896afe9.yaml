@@ -1,0 +1,108 @@
+field: 97aaab66-2fcc-478f-af29-e43f238abb67 # Kalender Liste
+fieldLayouts:
+  273372b4-ace2-4e94-8acf-ea011adc458b:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 5b0abf96-4f10-4320-814d-7b9f62898d3f # event Datum
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 05d49f96-c2f7-427e-88f1-a7df10dc178c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 95466e8e-061e-4884-8e39-4973bbecb164 # Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: dab43033-0b64-4a82-b474-73f2e5bd2049
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 6b8202d8-1e8d-41b4-b10c-f47ef291b1ca # Ort
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6a197e46-a522-4e7a-9dc8-5686ecced937
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 8c7a786c-23af-46d5-b71c-c97bf4ba9218
+        userCondition: null
+fields:
+  5b0abf96-4f10-4320-814d-7b9f62898d3f: # event Datum
+    columnSuffix: bqacqatv
+    contentColumnType: datetime
+    fieldGroup: null
+    handle: date
+    instructions: null
+    name: 'event Datum'
+    searchable: false
+    settings:
+      max: null
+      min: null
+      minuteIncrement: 30
+      showDate: true
+      showTime: false
+      showTimeZone: false
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Date
+  6b8202d8-1e8d-41b4-b10c-f47ef291b1ca: # Ort
+    columnSuffix: mbmrvwpx
+    contentColumnType: text
+    fieldGroup: null
+    handle: place
+    instructions: null
+    name: Ort
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  95466e8e-061e-4884-8e39-4973bbecb164: # Name
+    columnSuffix: kaoqmosr
+    contentColumnType: text
+    fieldGroup: null
+    handle: event
+    instructions: null
+    name: Name
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: event
+name: event
+sortOrder: 1

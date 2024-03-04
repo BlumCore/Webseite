@@ -1,0 +1,36 @@
+.sponsor{
+  background-color: white;
+  color: $primary;
+  &__title{
+    @extend .title;
+  }
+  &__link{
+    text-decoration: none;
+    height: 100%;
+    color: none;
+    position: relative;
+  }
+  &__logo{
+    width: 100%;
+    object-fit: cover;
+    padding: 10px;
+    @include respond-to(small){
+      padding: 20px;
+    }
+  }
+  &__name{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &__wrapper{
+    display: flex;
+    flex-direction: column;
+    height:100%; 
+    padding-bottom: 20px;
+  }
+}

@@ -1,0 +1,90 @@
+namespace :craft do
+
+    desc "install composer"
+	task :install_composer do
+		on roles(:web) do
+            execute "mkdir -p bin"
+            execute "curl -sS https://getcomposer.org/installer | php -- --install-dir=bin --filename=composer"
+		end
+	end
+
+    desc "install composer packages"
+	task :composer_packages do
+		on roles(:web) do
+            execute "cd #{release_path}/backend/craft && php ~/bin/composer install"
+		end
+	end
+
+    desc "set env file"
+    task :env_file do
+        on roles(:web) do
+            run_locally do
+    			roles(:all).each do |role|
+                    execute :scp, "craft/.env #{fetch(:username)}@#{role.hostname}:#{release_path}/backend/craft"
+    			end
+            end
+            execute "perl -i -pe 's~ENVIRONMENT=.*~ENVIRONMENT=\"#{fetch(:env)}\"~g' #{release_path}/backend/craft/.env"
+            execute "perl -i -pe 's~PRIMARY_SITE_URL=.*~PRIMARY_SITE_URL=\"#{fetch(:primary_site_url)}\"~g' #{release_path}/backend/craft/.env"
+            execute "#{release_path}/backend/craft/craft setup/db --database #{fetch(:db_name)} --driver mysql --interactive 0 --password #{fetch(:db_password)} --server #{fetch(:db_host)} --user #{fetch(:db_user)}"
+        end
+    end
+
+    desc "set htaccess file"
+    task :htaccess do
+           on roles (:web) do
+               execute "rm -f #{release_path}/backend/craft/web/.htaccess || true"
+               execute "cp #{release_path}/backend/craft/web/#{fetch(:env)}.htaccess #{release_path}/backend/craft/web/.htaccess"
+           end
+    end
+
+    desc "set correct file permission"
+    task :permissions do
+        on roles(:web) do
+            execute :chmod, "774 #{release_path}/backend/craft/.env"
+            execute :chmod, "774 #{release_path}/backend/craft/composer.json"
+            execute :chmod, "774 #{release_path}/backend/craft/composer.lock"
+            execute :chmod, "774 #{release_path}/backend/craft/config/license.key"
+            execute :chmod, "774 #{release_path}/backend/craft/storage/*"
+            execute :chmod, "774 #{release_path}/backend/craft/vendor/*"
+            execute :chmod, "774 #{release_path}/backend/craft/web/cpresources"
+        end
+    end
+
+    desc "clear template cache"
+    task :clear_template_cache do
+        on roles(:web) do
+            execute "cd #{release_path}/backend/craft && php craft clear-caches/compiled-templates"
+        end
+    end
+
+	desc "sync media folder from local to remote"
+	task :sync_media_l2r do
+		run_locally do
+			roles(:all).each do |role|
+                execute :rsync, "-avzPhu --iconv=utf-8-mac,utf-8 --exclude '.gitkeep' craft/web/#{fetch(:asset_folder)} #{fetch(:username)}@#{role.hostname}:#{shared_path}"
+			end
+		end
+	end
+
+    desc "sync media folder from remote to local"
+	task :sync_media_r2l do
+		run_locally do
+			roles(:all).each do |role|
+                execute :rsync, "-avzPhu --iconv=utf-8-mac,utf-8 --exclude '.gitkeep' #{fetch(:username)}@#{role.hostname}:#{shared_path}/#{fetch(:asset_folder)} craft/web"
+			end
+		end
+	end
+
+	desc "pull everything down from an environment (db and assets)"
+	task :pull do
+		invoke 'db:pull'
+		invoke 'craft:sync_media_r2l'
+	end
+
+	desc "push everything to an environment (db and assets)"
+	task :push do
+		invoke 'db:push'
+		invoke 'craft:sync_media_l2r'
+	end
+
+end

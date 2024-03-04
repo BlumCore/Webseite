@@ -1,0 +1,160 @@
+dateModified: 1709579560
+elementSources:
+  craft\elements\Entry:
+    -
+      key: '*'
+      type: native
+    -
+      heading: Einzeleinträge
+      type: heading
+    -
+      key: 'single:d2475e23-fe25-40e5-8e07-46ca1807882d' # Home
+      type: native
+    -
+      key: 'single:9e388fcf-7cd8-4076-af22-13a6e7dedbe7' # Globale Inhalte
+      type: native
+    -
+      heading: Strukturen
+      type: heading
+    -
+      defaultSort:
+        - structure
+        - asc
+      disabled: false
+      key: 'section:669e2a7a-0c8c-4f09-ae3a-81ef311f8b72' # Unterseiten
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - author
+        - link
+      type: native
+email:
+  fromEmail: digital@hi-schweiz.ch
+  fromName: 'HI Base'
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  documents:
+    hasUrls: true
+    name: Dokumente
+    settings:
+      path: media/documents
+    type: craft\fs\Local
+    url: '@primarySiteURL/media/documents'
+  images:
+    hasUrls: true
+    name: Bilder
+    settings:
+      path: media/images
+    type: craft\fs\Local
+    url: '@primarySiteURL/media/images'
+  videos:
+    hasUrls: true
+    name: Videos
+    settings:
+      path: media/videos
+    type: craft\fs\Local
+    url: '@primarySiteURL/media/videos'
+meta:
+  __names__:
+    0be81558-7927-4e8f-866b-b3a571e4e8c2: 'Sekundäre Navigation' # Sekundäre Navigation
+    0eb801cc-0c7b-4533-90ff-d758785b25fc: Sponsoren # Sponsoren
+    0ef7fb56-4893-4452-80cc-dd9df41387ed: 'Module Titel' # Module Titel
+    4baa41a2-cec9-4a44-832e-6d40c6726d78: 'About Bild' # About Bild
+    4fe0479e-71f8-48ef-ab81-948b2edc8b8f: Standard # Standard
+    5b0abf96-4f10-4320-814d-7b9f62898d3f: 'event Datum' # event Datum
+    5b7d7792-f622-4289-a94e-f10fbe2ab5a9: Bilder # Bilder
+    5d513d88-6ffc-4ad6-8ee2-c8ae0137f535: Dokumente # Dokumente
+    6b8202d8-1e8d-41b4-b10c-f47ef291b1ca: Ort # Ort
+    9e388fcf-7cd8-4076-af22-13a6e7dedbe7: 'Globale Inhalte' # Globale Inhalte
+    17d41138-4bf0-4b22-86e8-d485cbec1be8: 'Accordion Content' # Accordion Content
+    31a937b4-18b3-4b48-850c-e633deff527c: Sponsor # Sponsor
+    51aaa850-a0e4-41e3-8424-c86043bab5e0: Textfeld # Textfeld
+    73d1fe0c-864c-493a-a7bf-533f0896afe9: event # event
+    96f07d02-866d-40f3-8796-19cbbcd7f5a1: Videos # Videos
+    97aaab66-2fcc-478f-af29-e43f238abb67: 'Kalender Liste' # Kalender Liste
+    206b0441-3b56-4d0e-9491-0b8d30b4baed: SEO # SEO
+    225e2c06-2164-4773-ba48-8967c3e93bbe: Inhaltsmodule # Inhaltsmodule
+    225ee2f5-06df-4c35-9611-df9d463ebc6d: 'HI Base' # HI Base
+    279f9783-d910-40f2-b93a-d8dce6282077: Datenschutzerklärung # Datenschutzerklärung
+    389c95e4-78f4-4a84-ad75-d336434b410a: 'Abstand unten' # Abstand unten
+    669e2a7a-0c8c-4f09-ae3a-81ef311f8b72: Unterseiten # Unterseiten
+    03689d2e-62bd-4a61-9f93-e75006143ccb: Autoren # Autoren
+    4506ba97-f6aa-4c53-b507-65357f6e7931: 'Globale Inhalte' # Globale Inhalte
+    5604af56-0f7c-4b78-94a4-9c0b816a28d2: Link # Link
+    7316c507-ceab-482f-8a3e-0c96ce22f7d3: sponsorLink # sponsorLink
+    65842f65-1a65-4f40-b53e-dbf57fabee03: TypedLink # TypedLink
+    81608c9a-6a8c-4809-a30c-31e0e49236f3: HeroBilder # HeroBilder
+    95466e8e-061e-4884-8e39-4973bbecb164: Name # Name
+    378966f7-515f-4ede-a3b9-f7aa30041962: 'sponsor Logo' # sponsor Logo
+    26689256-fe82-4b68-b2a1-c9e4505bf381: Text # Text
+    67368816-380f-4180-93db-1a1ff7fecf25: 'Ueber mich' # Ueber mich
+    a0628d93-ae48-4103-bf03-dbcf0c4b84f3: 'Primäre Navigation' # Primäre Navigation
+    a8c4b7ce-76bf-400b-bbe3-f51cd63d6b0c: Bild # Bild
+    a30e4b60-156d-4ca5-a9c2-d6f42a91c972: link # link
+    bc5f16e7-a4c2-48c2-891d-eb87b0f40cba: 'Authoren (intern)' # Authoren (intern)
+    c0247ba7-b32e-4a5b-b2f9-ecab5f0e69dd: yannik-blum.ch # yannik-blum.ch
+    c220047c-4381-4fc3-b96e-37ef88184244: 'Kalender Text' # Kalender Text
+    ca3b638b-514e-4632-ba64-0410a1b4ca3b: 'Accordion Titel' # Accordion Titel
+    d2eaac86-1ec9-4495-8b0d-2b96f0238762: Default # Default
+    d61dde60-b864-45bf-b3b7-8aa89f1db4cd: Accordion # Accordion
+    d309d3ff-d436-4d54-b34e-49191bcdadbf: 'Globale Inhalte' # Globale Inhalte
+    d2475e23-fe25-40e5-8e07-46ca1807882d: Home # Home
+    da1d4526-3f54-4890-bcae-4d569b18dc7a: Common # Common
+    ddd3a7a3-b9f0-496e-a303-193beae58035: Links # Links
+    de149324-4447-4974-bf8b-b8e05b5f25e2: Sponsor # Sponsor
+    df122fe4-2195-47e9-8049-a601db27ef96: Modules # Modules
+    e8ad8253-23c4-4157-8274-03ec257dcfd3: Accordion # Accordion
+    e63ecf25-207b-44e7-a7fa-f741c17b8917: Simple # Simple
+    e818a470-5ebf-4364-918f-7a4e7466e3d9: Bilder # Bilder
+    f0cef014-d080-4151-acce-bfaa4cd52d8c: Home # Home
+    f081087e-61d7-4d06-be66-7d360e0491d2: link # link
+    f39a420a-90ff-416f-bc9f-e68f018330ef: Accordion # Accordion
+    f975f4a5-2e11-410c-bdb3-18a648976b12: Text # Text
+    ff29dc64-b318-4fad-adce-89d1a85fa6d5: Accordion # Accordion
+plugins:
+  blur-hash:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+  cp-nav:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.11
+  expanded-singles:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      expandSingles: true
+      redirectToEntry: true
+  field-manager:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  seo:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.2.0
+  typedlinkfield:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
+  typogrify:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  vite:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: solo
+  live: true
+  name: '@systemName'
+  retryDuration: null
+  schemaVersion: 4.5.3.0
+  timeZone: Europe/Zurich

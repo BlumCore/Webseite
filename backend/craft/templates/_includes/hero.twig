@@ -1,0 +1,14 @@
+<div class="hero">
+    <div class="swiper swiperHero">
+        <div class="swiper-wrapper swiper-herowrapper">
+            {% for h in entry.hero  %}
+            <div class="swiper-slide">
+                <div class="hero__image">
+                    <img class="" src="{{ h.url }}" alt="{{ h.alt ?? entry.title }}">
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: d309d3ff-d436-4d54-b34e-49191bcdadbf # Globale Inhalte
+handle: secondaryNav
+instructions: null
+name: 'Sekundäre Navigation'
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  selectionLabel: null
+  showSiteMenu: false
+  sources:
+    - 'single:d2475e23-fe25-40e5-8e07-46ca1807882d' # Home
+    - 'section:669e2a7a-0c8c-4f09-ae3a-81ef311f8b72' # Unterseiten
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

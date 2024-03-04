@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang='{{ craft.app.language }}'>
+
+{% set assets = '/dist/static/' %}
+{% set favicons = assets ~ 'favicons/' %}
+
+<head>
+    <meta charset='utf-8'/>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- Add SEO Fields with SEO Craft CMS PLugin -->
+    {% hook "seo" %}
+
+    <!-- Add favicons from realfavicongenerator.net -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ favicons }}apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ favicons }}favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ favicons }}favicon-16x16.png">
+    <link rel="manifest" href="{{ favicons }}site.webmanifest">
+    <link rel="mask-icon" href="{{ favicons }}safari-pinned-tab.svg" color="#ffffff">
+    <link rel="shortcut icon" href="{{ favicons }}favicon.ico">
+
+    <meta name="apple-mobile-web-app-title" content="{{ siteName }}">
+    <meta name="application-name" content="{{ siteName }}">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="{{ favicons }}mstile-144x144.png">
+    <meta name="msapplication-config" content="{{ favicons }}browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel='home' href='{{ siteUrl }}'/>
+    <link href="//web.swissnewsletter.ch/build/./assets/js/form/5_0/style.css" rel="stylesheet" type="text/css"/>
+<script charset="UTF-8" type="text/javascript" src="//web.swissnewsletter.ch/bundles/mailxpertcore/form/5_0/validation.js"></script>
+
+    {{ craft.vite.includeCriticalCssTags() }}
+
+    {# Load vite js and css, but do not load css async #}
+    {{ craft.vite.script("/src/js/main.js", false) }}
+
+    {# Todo: Comment out include shortly before go-live {%- include '_includes/gtag' -%} #}
+</head>
+
+<body class='{{ bodyClass is defined ? bodyClass }}'>

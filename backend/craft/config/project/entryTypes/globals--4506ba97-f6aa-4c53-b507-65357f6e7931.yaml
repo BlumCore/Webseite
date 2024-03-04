@@ -1,0 +1,95 @@
+fieldLayouts:
+  0f85e290-f560-4292-8583-743c116e65dc:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 67245a6b-4845-4522-90d8-185e598e7939
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: f998f706-c67b-4e52-b2e4-3bf447939847
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: a0628d93-ae48-4103-bf03-dbcf0c4b84f3 # Primäre Navigation
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 97e5365d-3178-4f99-8bcd-27c485ffd906
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 0be81558-7927-4e8f-866b-b3a571e4e8c2 # Sekundäre Navigation
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 660db5ac-4c1d-44a8-9c8a-c42ef505f980
+            userCondition: null
+            warning: null
+            width: 50
+        name: Navigation
+        uid: c8da616b-4581-46ad-8a61-dbd9d1fffc83
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 279f9783-d910-40f2-b93a-d8dce6282077 # Datenschutzerklärung
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ff8a9d20-dd3f-4a0c-9562-04e48fabcbf0
+            userCondition: null
+            warning: null
+            width: 100
+        name: Datenschutz
+        uid: 04f4d0f2-93e8-4602-bf2b-b984a97d281c
+        userCondition: null
+handle: globals
+hasTitleField: false
+name: 'Globale Inhalte'
+section: 9e388fcf-7cd8-4076-af22-13a6e7dedbe7 # Globale Inhalte
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

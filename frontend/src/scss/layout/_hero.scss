@@ -1,0 +1,13 @@
+.hero{
+  height: 100vh;
+    &__image{
+      height: 100vh;
+      background-color: $primary;
+      img{
+        height: 100%;
+        object-position: center;
+        object-fit: cover;
+        width: 100%;
+      }
+    }
+}

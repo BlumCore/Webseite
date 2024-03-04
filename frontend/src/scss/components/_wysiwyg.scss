@@ -1,0 +1,42 @@
+.wysiwyg {
+  figure {
+    &.table {
+      margin-block-start: 0;
+      margin-block-end: 0;
+      margin-inline-start: 0;
+      margin-inline-end: 0;
+
+      table {
+        width: 100%;
+
+        tr {
+          td {
+            text-align: left;
+
+            &:last-child {
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  ul, ol {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 16px;
+
+    li {
+      padding-left: 8px;
+
+      &::marker {
+        content: url('/static/assets/marker.svg');
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{% set link = link|default(null) %}
+{% set btnClasses = btnClasses|default('btn') %}
+
+{% if link %}
+    {% set url = link.url %}
+
+    <a class="{{ btnClasses }}" href="{{ url }}"  role="button"
+        {% if link.newWindow %} target="_blank" rel="noopener" {% endif %}>
+        {{ link.text }}
+    </a>
+{% endif %}

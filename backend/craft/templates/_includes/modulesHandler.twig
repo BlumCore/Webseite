@@ -1,0 +1,25 @@
+{#
+# This handler is used to set h2 - h3 headings for all modules with a module title (possibleHeadings)
+# Made to push SEO for the site
+#}
+
+{# Include all modules here with a module title #}
+{% set possibleHeadings = ['wysiwyg'] %}
+
+{% set modules = entry.modules.all() %}
+
+{% for module in modules %}
+    {% set heading = 0 %}
+
+    {# Get the next module #}
+    {% set next = modules[loop.index] ?? null %}
+
+    {% for item in modules|filter(m => m.type.handle in possibleHeadings) %}
+        {% if item.id == module.id %}
+            {# Only 4 possible h2, then h3 #}
+            {% set heading = loop.index > 4 ? 3 : 2 %}
+        {% endif %}
+    {% endfor %}
+
+    {% include['_modules/' ~ module.type] with {next} %}
+{% endfor %}

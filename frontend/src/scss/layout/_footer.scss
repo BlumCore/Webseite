@@ -1,0 +1,23 @@
+.footer{
+    border-top: $primary 2px solid;
+    background-color: white;
+    height: auto;
+    &__links{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0;
+        &--a{
+            @extend .text--small;
+            color: $primary;
+            text-decoration: none;
+        }   
+    }
+    &__text{
+        @extend .text--small;
+        color: $primary;
+        padding-top: 20px;
+        text-align: right;
+    }
+
+
+}

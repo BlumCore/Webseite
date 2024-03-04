@@ -1,0 +1,17 @@
+# Folders
+frontend/.config export-ignore
+frontend/.scripts export-ignore
+frontend/src export-ignore
+backend/cap export-ignore
+backend/db_backups export-ignore
+
+# Files
+**/package.json export-ignore
+**/.env.example export-ignore
+**/yarn.lock export-ignore
+**/Capfile export-ignore
+**/.editorconfig export-ignore
+**/.gitattributes export-ignore
+**/.gitignore export-ignore
+**/.editorconfig export-ignore
+**/README.md export-ignore

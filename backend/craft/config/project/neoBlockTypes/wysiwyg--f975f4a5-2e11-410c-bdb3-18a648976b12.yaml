@@ -1,0 +1,19 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: 225e2c06-2164-4773-ba48-8967c3e93bbe # Inhaltsmodule
+group: null
+groupChildBlockTypes: true
+handle: wysiwyg
+icon: null
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Text
+sortOrder: 1
+topLevel: true

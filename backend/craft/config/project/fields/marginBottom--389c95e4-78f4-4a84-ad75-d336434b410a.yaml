@@ -1,0 +1,14 @@
+columnSuffix: skiharbu
+contentColumnType: boolean
+fieldGroup: df122fe4-2195-47e9-8049-a601db27ef96 # Modules
+handle: marginBottom
+instructions: null
+name: 'Abstand unten'
+searchable: false
+settings:
+  default: true
+  offLabel: Aus
+  onLabel: Ein
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

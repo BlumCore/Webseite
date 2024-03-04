@@ -1,0 +1,24 @@
+defaultPlacement: end
+enableVersioning: true
+handle: home
+name: Home
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primäre eintrag Seite'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  c0247ba7-b32e-4a5b-b2f9-ecab5f0e69dd: # yannik-blum.ch
+    enabledByDefault: true
+    hasUrls: true
+    template: _templates/_home
+    uriFormat: __home__
+type: single

@@ -1,0 +1,20 @@
+.swiper {
+  &-wrapper {
+    height: 100vh !important;
+    position: relative;
+  }
+  &__slider {
+
+  }
+}
+
+.slider{
+  &__image{
+    padding-bottom: 10px;
+    img{
+      object-fit: cover;
+      width: 100%;
+      aspect-ratio: 16/9;
+    }
+  }
+}

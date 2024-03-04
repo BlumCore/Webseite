@@ -1,0 +1,11 @@
+<div class="swiperImg swiper">
+    <div class="swiper-wrapper">
+        {% for i in entry.images %}
+        <div class="swiper-slide">
+            <div class="slider__image">
+                <img src="{{ i.url }}">
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

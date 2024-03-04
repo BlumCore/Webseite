@@ -1,0 +1,19 @@
+.calendar{
+    padding: 50px 0;
+    @include respond-to(small){
+        padding: 150px 0;
+    }
+    color: white;
+    background-image: linear-gradient(left, white, $primary);
+    &__title{
+        @extend .title;
+        color: $primary
+    }
+    &__li{
+      @extend .text;
+      color: $primary;
+      @include respond-to(small){
+        color: white;
+      }
+    }
+}

@@ -1,0 +1,66 @@
+description: ''
+handle: authors
+name: Autoren
+permissions:
+  - accesscp
+  - accessplugin-seo
+  - accesssitewhensystemisoff
+  - 'createentries:669e2a7a-0c8c-4f09-ae3a-81ef311f8b72' # Unterseiten
+  - 'createfolders:5b7d7792-f622-4289-a94e-f10fbe2ab5a9' # Bilder
+  - 'createfolders:5d513d88-6ffc-4ad6-8ee2-c8ae0137f535' # Dokumente
+  - 'createfolders:96f07d02-866d-40f3-8796-19cbbcd7f5a1' # Videos
+  - 'deleteassets:5b7d7792-f622-4289-a94e-f10fbe2ab5a9' # Bilder
+  - 'deleteassets:5d513d88-6ffc-4ad6-8ee2-c8ae0137f535' # Dokumente
+  - 'deleteassets:96f07d02-866d-40f3-8796-19cbbcd7f5a1' # Videos
+  - 'deleteentries:669e2a7a-0c8c-4f09-ae3a-81ef311f8b72' # Unterseiten
+  - 'deletepeerassets:5b7d7792-f622-4289-a94e-f10fbe2ab5a9' # Bilder
+  - 'deletepeerassets:5d513d88-6ffc-4ad6-8ee2-c8ae0137f535' # Dokumente
+  - 'deletepeerassets:96f07d02-866d-40f3-8796-19cbbcd7f5a1' # Videos
+  - 'deletepeerentries:669e2a7a-0c8c-4f09-ae3a-81ef311f8b72' # Unterseiten
+  - 'deletepeerentrydrafts:669e2a7a-0c8c-4f09-ae3a-81ef311f8b72' # Unterseiten
+  - 'deletepeerentrydrafts:9e388fcf-7cd8-4076-af22-13a6e7dedbe7' # Globale Inhalte
+  - 'deletepeerentrydrafts:d2475e23-fe25-40e5-8e07-46ca1807882d' # Home
+  - 'editimages:5b7d7792-f622-4289-a94e-f10fbe2ab5a9' # Bilder
+  - 'editimages:5d513d88-6ffc-4ad6-8ee2-c8ae0137f535' # Dokumente
+  - 'editimages:96f07d02-866d-40f3-8796-19cbbcd7f5a1' # Videos
+  - 'editpeerimages:5b7d7792-f622-4289-a94e-f10fbe2ab5a9' # Bilder
+  - 'editpeerimages:5d513d88-6ffc-4ad6-8ee2-c8ae0137f535' # Dokumente
+  - 'editpeerimages:96f07d02-866d-40f3-8796-19cbbcd7f5a1' # Videos
+  - 'neo-createblocks:d61dde60-b864-45bf-b3b7-8aa89f1db4cd' # Accordion
+  - 'neo-createblocks:f975f4a5-2e11-410c-bdb3-18a648976b12' # Text
+  - 'neo-deleteblocks:d61dde60-b864-45bf-b3b7-8aa89f1db4cd' # Accordion
+  - 'neo-deleteblocks:f975f4a5-2e11-410c-bdb3-18a648976b12' # Text
+  - 'neo-editblocks:d61dde60-b864-45bf-b3b7-8aa89f1db4cd' # Accordion
+  - 'neo-editblocks:f975f4a5-2e11-410c-bdb3-18a648976b12' # Text
+  - 'replacefiles:5b7d7792-f622-4289-a94e-f10fbe2ab5a9' # Bilder
+  - 'replacefiles:5d513d88-6ffc-4ad6-8ee2-c8ae0137f535' # Dokumente
+  - 'replacefiles:96f07d02-866d-40f3-8796-19cbbcd7f5a1' # Videos
+  - 'replacepeerfiles:5b7d7792-f622-4289-a94e-f10fbe2ab5a9' # Bilder
+  - 'replacepeerfiles:5d513d88-6ffc-4ad6-8ee2-c8ae0137f535' # Dokumente
+  - 'replacepeerfiles:96f07d02-866d-40f3-8796-19cbbcd7f5a1' # Videos
+  - 'saveassets:5b7d7792-f622-4289-a94e-f10fbe2ab5a9' # Bilder
+  - 'saveassets:5d513d88-6ffc-4ad6-8ee2-c8ae0137f535' # Dokumente
+  - 'saveassets:96f07d02-866d-40f3-8796-19cbbcd7f5a1' # Videos
+  - 'saveentries:669e2a7a-0c8c-4f09-ae3a-81ef311f8b72' # Unterseiten
+  - 'saveentries:9e388fcf-7cd8-4076-af22-13a6e7dedbe7' # Globale Inhalte
+  - 'saveentries:d2475e23-fe25-40e5-8e07-46ca1807882d' # Home
+  - 'savepeerassets:5b7d7792-f622-4289-a94e-f10fbe2ab5a9' # Bilder
+  - 'savepeerassets:5d513d88-6ffc-4ad6-8ee2-c8ae0137f535' # Dokumente
+  - 'savepeerassets:96f07d02-866d-40f3-8796-19cbbcd7f5a1' # Videos
+  - 'savepeerentries:669e2a7a-0c8c-4f09-ae3a-81ef311f8b72' # Unterseiten
+  - 'savepeerentrydrafts:669e2a7a-0c8c-4f09-ae3a-81ef311f8b72' # Unterseiten
+  - 'savepeerentrydrafts:9e388fcf-7cd8-4076-af22-13a6e7dedbe7' # Globale Inhalte
+  - 'savepeerentrydrafts:d2475e23-fe25-40e5-8e07-46ca1807882d' # Home
+  - 'viewassets:5b7d7792-f622-4289-a94e-f10fbe2ab5a9' # Bilder
+  - 'viewassets:5d513d88-6ffc-4ad6-8ee2-c8ae0137f535' # Dokumente
+  - 'viewassets:96f07d02-866d-40f3-8796-19cbbcd7f5a1' # Videos
+  - 'viewentries:669e2a7a-0c8c-4f09-ae3a-81ef311f8b72' # Unterseiten
+  - 'viewentries:9e388fcf-7cd8-4076-af22-13a6e7dedbe7' # Globale Inhalte
+  - 'viewentries:d2475e23-fe25-40e5-8e07-46ca1807882d' # Home
+  - 'viewpeerassets:5b7d7792-f622-4289-a94e-f10fbe2ab5a9' # Bilder
+  - 'viewpeerassets:5d513d88-6ffc-4ad6-8ee2-c8ae0137f535' # Dokumente
+  - 'viewpeerassets:96f07d02-866d-40f3-8796-19cbbcd7f5a1' # Videos
+  - 'viewpeerentries:669e2a7a-0c8c-4f09-ae3a-81ef311f8b72' # Unterseiten
+  - 'viewpeerentrydrafts:669e2a7a-0c8c-4f09-ae3a-81ef311f8b72' # Unterseiten
+  - 'viewpeerentrydrafts:9e388fcf-7cd8-4076-af22-13a6e7dedbe7' # Globale Inhalte
+  - 'viewpeerentrydrafts:d2475e23-fe25-40e5-8e07-46ca1807882d' # Home

@@ -1,0 +1,23 @@
+columnSuffix: rgchkjpj
+contentColumnType: text
+fieldGroup: df122fe4-2195-47e9-8049-a601db27ef96 # Modules
+handle: moduleTitle
+instructions: null
+name: 'Module Titel'
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes: '*'
+  ckeConfig: e63ecf25-207b-44e7-a7fa-f741c17b8917 # Simple
+  columnType: text
+  defaultTransform: null
+  enableSourceEditingForNonAdmins: false
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+  wordLimit: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field

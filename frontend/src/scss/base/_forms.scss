@@ -1,0 +1,32 @@
+.form{
+    @extend .text;   
+
+}
+.submit_button{
+    border: $primary solid 2px;
+    border-radius: 10px;
+    color: $primary;
+    background-color: white;
+}
+
+.newsletter{
+    background-image: linear-gradient(left, white, $primary);
+    text-align: left;
+    &__text{
+        @extend .text;
+        color: $primary
+    }
+    label{
+        @extend .text;
+    }
+    input{
+        border: $primary 2px solid;
+        border-radius: 10px;
+        width: 80%;
+    }
+    select{
+        border: $primary 2px solid;
+        border-radius: 10px;
+        width: 80%;
+    }
+}

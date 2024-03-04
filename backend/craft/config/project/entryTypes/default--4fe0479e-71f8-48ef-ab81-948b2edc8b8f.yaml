@@ -1,0 +1,47 @@
+fieldLayouts:
+  fb34f39c-dfd9-43dd-8f36-c71bcf3839e2:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: f8fab2ab-9bf7-469d-9524-7f3e7bf76643
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: f0527157-2e16-47a4-8c9f-50319f11da22
+        userCondition: null
+handle: default
+hasTitleField: true
+name: Standard
+section: 669e2a7a-0c8c-4f09-ae3a-81ef311f8b72 # Unterseiten
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

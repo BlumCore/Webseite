@@ -1,0 +1,161 @@
+@use "sass:math";
+
+@mixin breakpoint-down($width) {
+  @media only screen and (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin breakpoint-up($width) {
+  @media only screen and (min-width: $width) {
+    @content;
+  }
+}
+
+ @mixin down($width) {
+   @media only screen and (max-width: $width - 1) {
+     @content;
+   }
+ }
+
+ @mixin up($width) {
+   @media only screen and (min-width: $width) {
+     @content;
+   }
+ }
+
+ @mixin range($width-min, $width-max) {
+   @media only screen and (min-width: $width-min) and (max-width: $width-max - 1) {
+     @content;
+   }
+ }
+
+
+/**
+ * For hacks. Use wisely.
+ */
+
+@mixin ie9() {
+    @media screen and (min-width:0\0) {
+        @content;
+    }
+}
+
+@mixin firefox() {
+    @-moz-document url-prefix() {
+        @content;
+    }
+}
+
+/**
+ * Object mixin to make polyfill working.
+ */
+@mixin object($fit: cover, $position: center center) {
+    width: 100%;
+    height: 100%;
+    object-fit: $fit;
+    object-position: $position;
+}
+
+/**
+ * Easy functions to create easily pure css arrows anywhere
+ */
+
+@mixin arrow-up($size: 10px, $color: #000) {
+  width: 0;
+  height: 0;
+  border-left: $size solid transparent;
+  border-right: $size solid transparent;
+  border-bottom: $size solid $color;
+}
+
+@mixin arrow-down($size: 10px, $color: #000) {
+  width: 0;
+  height: 0;
+  border-left: $size solid transparent;
+  border-right: $size solid transparent;
+  border-top: $size solid $color;
+}
+
+@mixin arrow-right($size: 10px, $color: #000) {
+  width: 0;
+  height: 0;
+  border-top: $size solid transparent;
+  border-bottom: $size solid transparent;
+  border-left: $size solid $color;
+}
+
+@mixin arrow-left($size: 10px, $color: #000) {
+  width: 0;
+  height: 0;
+  border-top: $size solid transparent;
+  border-bottom: $size solid transparent;
+  border-right: $size solid $color;
+}
+
+// Sizing shortcuts
+// -------------------------
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin square($size) {
+  @include size($size, $size);
+}
+
+// organize the stacking order using the $layers variable
+@mixin z-index($level: 'content') {
+  z-index: map-get($layers, $level);
+}
+
+// Converts a Adobe XD letter spacing value to a em value
+@mixin letter-spacing($spacing) {
+  letter-spacing: math.div($spacing, 1000) * 1em;
+}
+
+/// https://css-tricks.com/snippets/sass/viewport-sized-typography-minimum-maximum-sizes/
+/// Viewport sized typography with minimum and maximum values
+///
+/// @author Eduardo Boucas (@eduardoboucas)
+///
+/// @param {Number}   $responsive  - Viewport-based size
+/// @param {Number}   $min         - Minimum font size (px)
+/// @param {Number}   $max         - Maximum font size (px)
+///                                  (optional)
+/// @param {Number}   $fallback    - Fallback for viewport-
+///                                  based units (optional)
+///
+/// @example scss - 5vw font size (with 50px fallback),
+///                 minumum of 35px and maximum of 150px
+///  @include responsive-font(5vw, 35px, 150px, 50px);
+///
+@mixin responsive-font($responsive, $min, $max: false, $fallback: false) {
+  $responsive-unitless: math.div($responsive, $responsive - $responsive + 1);
+  $dimension: if(unit($responsive) == 'vh', 'height', 'width');
+  $min-breakpoint: math.div($min, $responsive-unitless) * 100;
+
+  @media (max-#{$dimension}: #{$min-breakpoint}) {
+    font-size: $min;
+  }
+
+  @if $max {
+    $max-breakpoint: math.div($max, $responsive-unitless) * 100;
+
+    @media (min-#{$dimension}: #{$max-breakpoint}) {
+      font-size: $max;
+    }
+  }
+
+  @if $fallback {
+    font-size: $fallback;
+  }
+
+  font-size: $responsive;
+}
+
+
+@mixin zero-margin-zero-padding {
+  margin: 0;
+  padding: 0;
+}

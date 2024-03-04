@@ -1,0 +1,20 @@
+<div class="sponsor">
+    <div class="container">
+        <div class="row">
+            <div class="gr-24">
+                <h3 class="sponsor__title">Sponsoren</h3>
+            </div>
+        </div>
+        <div class="row row-justify-center">
+            {% for s in entry.sponsors %}
+                <div class="gr-12 gr-8@small">
+                    <div class="sponsor__wrapper">
+                        <a class="sponsor__link" href="{{ s.sponsorLink.url }}">
+                            <img class="sponsor__logo" src="{{ s.sponsorLogo.one().url }}">
+                        </a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

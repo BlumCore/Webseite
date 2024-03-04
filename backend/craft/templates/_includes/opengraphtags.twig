@@ -1,0 +1,72 @@
+{% set image = entry.ogImage.one() ?? null %}
+{% set headerImg = entry.headerImg.one() ?? null %}
+{% set img = entry.img.one() ?? null %}
+
+{% set openGraphImage = {
+    mode: 'crop',
+    width: 1200,
+    height: 630,
+    position: "center-center",
+} %}
+
+{% if entry is defined %}
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ entry.url }}">
+    <meta property="og:title" content="
+            {%- if entry['ogTitle'] is defined and entry['ogTitle'] is not null -%}
+                {{ entry['ogTitle'] }}
+            {%- elseif entry['metaTitle'] is defined and entry['metaTitle'] is not null -%}
+                {{ entry['metaTitle'] }}
+            {%- elseif entry.title is defined and entry.title is not null -%}
+                {{ entry.title }} &ndash; {{ siteName }}
+            {%- else -%}
+                {{ siteName }}
+            {%- endif -%}
+        ">
+    <meta property="og:description" content="
+            {%- if entry['ogDescription'] -%}
+                {{ entry['ogDescription'] }}
+            {%- elseif entry['metaDescription'] -%}
+                {{ entry['metaDescription'] }}
+            {%- endif -%}
+        ">
+
+    <meta property="og:image" content="
+            {%- if image is not null -%}
+                {{ image.url(openGraphImage) }}
+            {%- elseif headerImg is defined and headerImg is not null -%}
+                {{ headerImg.url(openGraphImage) }}
+            {%- elseif img is defined and img is not null -%}
+                {{ img.url(openGraphImage) }}
+            {%- endif -%}
+    ">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{ entry.url }}">
+    <meta property="twitter:title" content="
+            {%- if entry['ogTitle'] is defined and entry['ogTitle'] is not null -%}
+                {{ entry['ogTitle'] }}
+            {%- elseif entry['metaTitle'] is defined and entry['metaTitle'] is not null -%}
+                {{ entry['metaTitle'] }}
+            {%- elseif entry.title is defined and entry.title is not null -%}
+                {{ entry.title }} &ndash; {{ siteName }}
+            {%- else -%}
+                {{ siteName }}
+            {%- endif -%}
+        ">
+    <meta property="twitter:description" content="
+            {%- if entry['ogDescription'] -%}
+                {{ entry['ogDescription'] }}
+            {%- elseif entry['metaDescription'] -%}
+                {{ entry['metaDescription'] }}
+            {% endif -%}
+        ">
+    <meta property="twitter:image" content="
+        {%- if image is not null -%}
+            {{ image.url(openGraphImage) }}
+        {%- endif -%}
+    ">
+
+{% endif %}

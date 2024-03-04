@@ -1,0 +1,28 @@
+// Header
+$header-mobile: 16px;
+$header-desktop: 32px;
+
+$scroll-offset: 24px;
+
+// Colors
+$color-white: #ffffff;
+$color-black: #000000;
+
+// Fonts
+$font-base: 'Arial', sans-serif;
+$font-weight-regular: 400;
+$font-weight-semi-bold: 700;
+
+// Margins - feel free to rename them based on your project.
+$margin-xsmall: 12px;
+$margin-small: 12px;
+$margin-medium: 12px;
+$margin-large: 12px;
+$margin-xlarge: 12px;
+$margin-xxlarge: 12px;
+
+// transitions and easing, feel free to change the values
+$time: 500ms;
+$time--slow: 750ms;
+$time--fast: 250ms;
+$easing: cubic-bezier(0.65,0.05,0.36,1);

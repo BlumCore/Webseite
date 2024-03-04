@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+handle: subsites
+name: Unterseiten
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primäre eintrag Seite'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  c0247ba7-b32e-4a5b-b2f9-ecab5f0e69dd: # yannik-blum.ch
+    enabledByDefault: true
+    hasUrls: true
+    template: _templates/_default.twig
+    uriFormat: '{slug}'
+structure:
+  maxLevels: null
+  uid: 5736850f-b011-4a69-b469-58966f721e37
+type: structure

@@ -1,0 +1,18 @@
+{% extends '_layouts/master' %}
+{% set bodyClass = 'default' %}
+
+{% block content %}
+    {% include '_includes/header' %}
+
+    <main class="main" id="main">
+        <div class="modules">
+            {#
+            <div class="modules">
+                {% include '_includes/modulesHandler' %}
+            </div>
+            #}
+        </div>
+    </main>
+
+    {% include '_includes/footer' %}
+{% endblock %}

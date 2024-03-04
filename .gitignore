@@ -1,0 +1,23 @@
+# Caches
+.sass-cache
+
+# Dependency directories
+node_modules
+
+# OS generated files
+Thumbs.db
+.DS_Store
+._*
+.TemporaryItems
+.Trashes
+
+# Log files and databases
+*.log
+*.sql
+*.sqlite
+log
+
+/.idea/
+backend/cap/deploy/*
+backend/cap/deploy.rb
+!backend/cap/deploy/example.*

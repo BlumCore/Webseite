@@ -1,0 +1,60 @@
+{#  #}
+
+{% set img = entry.image.one() %}
+
+{% set jpeg768 = {
+    mode: "crop",
+    width: 768,
+    height: 768,
+    quality: 70,
+    format: "jpeg",
+} %}
+
+{% set webp768 = {
+    mode: "crop",
+    width: 768,
+    height: 768,
+    quality: 70,
+    format: "webp",
+} %}
+
+{% set jpeg320 = {
+    mode: "crop",
+    width: 310,
+    height: 310,
+    position: "center-center",
+    quality: 70,
+    format: "jpeg",
+} %}
+
+{% set webp320 = {
+    mode: "crop",
+    width: 310,
+    height: 310,
+    position: "center-center",
+    quality: 70,
+    format: "webp",
+} %}
+
+{% set preview = {
+    mode: "crop",
+    width: 310,
+    height: 310,
+    position: "center-center",
+    quality: 70,
+    format: "jpeg",
+} %}
+
+
+<picture class="image__wrapper">
+    <source media="(min-width: 768px)" srcset="{{ img.url(webp768) }}"
+            data-srcset="{{ img.url(webp768) }}" type="image/webp">
+    <source media="(min-width: 768px)" srcset="{{ img.url(jpeg768) }}"
+            data-srcset="{{ img.url(jpeg768) }}" type="image/jpeg">
+
+    <source media="(min-width: 300px)" srcset="{{ img.url(webp320) }}"
+            data-srcset="{{ img.url(webp320) }}" type="image/webp">
+    <source media="(min-width: 300px)" srcset="{{ img.url(jpeg320) }}"
+            data-srcset="{{ img.url(jpeg320) }}" type="image/jpeg">
+    <img class="workshop__image" src="{{- img.url() -}}" alt="{{- img.title -}}">
+</picture>

@@ -1,0 +1,149 @@
+fieldLayouts:
+  6ab1cd70-ca28-4450-9ff2-52ea99c163a8:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: ab02c4e5-a018-4b8a-98fc-20dbe11a51b4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 81608c9a-6a8c-4809-a30c-31e0e49236f3 # HeroBilder
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f50d3d73-c0de-4249-8fe3-97afa51454eb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 67368816-380f-4180-93db-1a1ff7fecf25 # Ueber mich
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3230ded9-902b-4be7-a626-3f522f9611e1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4baa41a2-cec9-4a44-832e-6d40c6726d78 # About Bild
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c638d58f-a199-44ec-a324-6f7d8f27a686
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0eb801cc-0c7b-4533-90ff-d758785b25fc # Sponsoren
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 534150e6-4e60-43da-8025-c7d92f601d8a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e818a470-5ebf-4364-918f-7a4e7466e3d9 # Bilder
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: af5e6d80-8183-4d27-a68a-3bb6385a33cd
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: c220047c-4381-4fc3-b96e-37ef88184244 # Kalender Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d7697645-ea76-4330-969b-190d5c52b19a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 97aaab66-2fcc-478f-af29-e43f238abb67 # Kalender Liste
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 73463e9f-a967-4f26-86d4-ab45b47d7336
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 4dd806c1-5888-4b4f-aa10-b699c1bb27e8
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 206b0441-3b56-4d0e-9491-0b8d30b4baed # SEO
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 48d6174a-2eb0-45cf-8b9f-4d2c9f93d8ba
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 7f92f7a5-dfc9-4950-aa5c-92792ea66215
+        userCondition: null
+handle: home
+hasTitleField: false
+name: Home
+section: d2475e23-fe25-40e5-8e07-46ca1807882d # Home
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

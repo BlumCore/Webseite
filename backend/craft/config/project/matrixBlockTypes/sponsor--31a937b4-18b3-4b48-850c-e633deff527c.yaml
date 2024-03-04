@@ -1,0 +1,171 @@
+field: 0eb801cc-0c7b-4533-90ff-d758785b25fc # Sponsoren
+fieldLayouts:
+  0dfd9a97-8c9c-4b70-9f8c-9e6e94ab8358:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: de149324-4447-4974-bf8b-b8e05b5f25e2 # Sponsor
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 89500ab3-b69d-4960-b809-9aecfa9f6bcf
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 378966f7-515f-4ede-a3b9-f7aa30041962 # sponsor Logo
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 30b54884-a8fb-49e5-8640-a8f4265c6e6c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 7316c507-ceab-482f-8a3e-0c96ce22f7d3 # sponsorLink
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 09ea7985-2a21-41f6-a5c3-e16a9e65adef
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: e2ca0a83-944c-4deb-94c4-14416c918bc3
+        userCondition: null
+fields:
+  7316c507-ceab-482f-8a3e-0c96ce22f7d3: # sponsorLink
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: sponsorLink
+    instructions: null
+    name: sponsorLink
+    searchable: false
+    settings:
+      allowCustomText: true
+      allowTarget: false
+      autoNoReferrer: false
+      customTextMaxLength: 0
+      customTextRequired: false
+      defaultLinkName: user
+      defaultText: ''
+      enableAllLinkTypes: true
+      enableAriaLabel: false
+      enableElementCache: false
+      enableTitle: false
+      typeSettings:
+        asset:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+        category:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+        custom:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        email:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        entry:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+        site:
+          enabled: false
+          sites: '*'
+        tel:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        url:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        user:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+    translationKeyFormat: null
+    translationMethod: none
+    type: lenz\linkfield\fields\LinkField
+  378966f7-515f-4ede-a3b9-f7aa30041962: # sponsor Logo
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: sponsorLogo
+    instructions: null
+    name: 'sponsor Logo'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds: null
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:5b7d7792-f622-4289-a94e-f10fbe2ab5a9' # Bilder
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: null
+      previewMode: full
+      restrictFiles: false
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:5b7d7792-f622-4289-a94e-f10fbe2ab5a9' # Bilder
+      restrictedLocationSubpath: null
+      selectionLabel: null
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources:
+        - 'volume:5b7d7792-f622-4289-a94e-f10fbe2ab5a9' # Bilder
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  de149324-4447-4974-bf8b-b8e05b5f25e2: # Sponsor
+    columnSuffix: kfmapvqb
+    contentColumnType: text
+    fieldGroup: null
+    handle: sponsorName
+    instructions: null
+    name: Sponsor
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: sponsor
+name: Sponsor
+sortOrder: 1

@@ -1,0 +1,80 @@
+## Using php Version 8.0
+<IfModule mime_module>
+   AddHandler application/x-httpd-alt-php80 .php .php8 .phtml
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    ## Redirect non https, www traffic to https non-www
+    RewriteCond %{HTTPS} off [OR]
+    RewriteCond %{HTTP_HOST} ^www\. [NC]
+    RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
+    RewriteRule ^ https://%1%{REQUEST_URI} [NE,R=301,L]
+
+    ## Send would-be 404 requests to Craft
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} !^/(favicon\.ico|apple-touch-icon.*\.png)$ [NC]
+    RewriteRule (.+) index.php?p=$1 [QSA,L]
+
+</IfModule>
+
+<IfModule mod_headers.c>
+
+   ## Disable cross-site scripting filtering, because this header is deprecated
+   ## https://owasp.org/www-project-secure-headers/#x-xss-protection
+   Header always set X-XSS-Protection: 0
+
+   ## Disallow embedding the page (e.g. iFrames)
+   ## https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
+   Header always append X-Frame-Options: SAMEORIGIN
+
+   ## Opt-out of MIME type sniffing
+   ## https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options
+   Header always set X-Content-Type-Options: nosniff
+
+   ## Send referrer data over a secure connection
+   ## https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy
+   Header always set Referrer-Policy: strict-origin-when-cross-origin
+
+   ## Force communication using HTTPS instead of HTTP.
+   ## https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security
+   Header always set Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+
+   ## Specifies if a cross-domain policy file (crossdomain.xml) is allowed.
+   ## https://owasp.org/www-project-secure-headers/#x-permitted-cross-domain-policies
+   Header always set X-Permitted-Cross-Domain-Policies: none
+
+   ## The Permissions-Policy header replaces the existing Feature-Policy header
+   ## for controlling delegation of permissions and powerful features.
+   ## https://owasp.org/www-project-secure-headers/
+   Header always set Permissions-Policy: accelerometer=(),autoplay=(),camera=(),display-capture=(),document-domain=(),encrypted-media=(),fullscreen=(),geolocation=(),gyroscope=(),magnetometer=(),microphone=(),midi=(),payment=(),picture-in-picture=(),publickey-credentials-get=(),screen-wake-lock=(),sync-xhr=(self),usb=(),web-share=(),xr-spatial-tracking=()
+   Header always set Feature-Policy: self
+
+</IfModule>
+
+<IfModule mod_deflate.c>
+# Deflate Compression by FileType
+  AddOutputFilterByType DEFLATE text/plain
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/xml
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE text/javascript
+  AddOutputFilterByType DEFLATE font/otf
+  AddOutputFilterByType DEFLATE font/ttf
+  AddOutputFilterByType DEFLATE image/svg+xml
+  AddOutputFilterByType DEFLATE image/x-icon
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE application/xhtml+xml
+  AddOutputFilterByType DEFLATE application/rss+xml
+  AddOutputFilterByType DEFLATE application/atom_xml
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/x-javascript
+  AddOutputFilterByType DEFLATE application/x-shockwave-flash
+  AddOutputFilterByType DEFLATE application/x-font
+  AddOutputFilterByType DEFLATE application/x-font-opentype
+  AddOutputFilterByType DEFLATE application/x-font-otf
+  AddOutputFilterByType DEFLATE application/x-font-truetype
+  AddOutputFilterByType DEFLATE application/x-font-ttf
+</IfModule>

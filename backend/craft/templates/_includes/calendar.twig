@@ -1,0 +1,16 @@
+<div class="calendar">
+    <div class="container">
+        <div class="row">
+            <div class="gr-24 gr-12@small">
+                <h2 class="calendar__title">Mein Rennkalender</h2>
+            </div>
+            <div class="gr-24 gr-12@small ">
+            <ul>
+               {% for e in entry.calenderList %}
+                    <li class="calendar__li">{{ e.date|date("d.m.Y") }}, {{ e.event }}, {{ e.place}} </li>
+               {% endfor %}
+               </ul>
+            </div>
+        </div>
+    </div>
+</div>

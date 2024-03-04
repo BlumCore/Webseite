@@ -1,0 +1,20 @@
+.title{
+  font-family: "Anta", "Arial";
+  font-weight: 400;
+  line-height: 1.1;
+  @include responsive-font(2.4vw, 16px, 32px, 24px);
+}
+
+.text{
+  font-family: "Anta", "Arial";
+  font-weight: 400;
+  line-height: 1.1;
+  @include responsive-font(1.6vw, 12px, 24px, 16px);
+}
+
+.text--small{
+  font-family: "Anta", "Arial";
+  font-weight: 400;
+  line-height: 1.1;
+  @include responsive-font(1.4vw, 10px, 18px, 14px);
+}

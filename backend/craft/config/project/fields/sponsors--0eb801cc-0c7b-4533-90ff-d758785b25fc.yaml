@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: da1d4526-3f54-4890-bcae-4d569b18dc7a # Common
+handle: sponsors
+instructions: null
+name: Sponsoren
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_sponsors}}'
+  maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix
