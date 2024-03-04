@@ -12,11 +12,11 @@
   "scripts": {
     "setup": ".scripts/setup.sh",
     "update": ".scripts/update.sh",
-    "clean": "rm -rf ../backend/craft/web/dist/",
+    "clean": "",
     "watch": "vite",
     "copy": "mkdir -p ../backend/craft/web/dist/static && cp -r ./static/. ../backend/craft/web/dist/static",
     "dev": "vite",
-    "build": "yarn clean && vite build"
+    "build": "vite build"
   },
   "dependencies": {
     "@hi_digital/easy-flex": "^1.0.0",
