@@ -22,7 +22,7 @@ set :asset_folder, "media"
 ##################################################
 
 # Setup URLs and paths
-set :repo_url, "git@bitbucket.org:hi-schweiz/#{fetch(:application)}.git"
+set :repo_url, "git@github.com:BlumCore/Webseite.git"
 set :root_dir, "/home/#{fetch(:username)}"
 set :tmp_dir, "#{fetch(:root_dir)}/tmp_capistrano"
 set :public_html_dir, "#{fetch(:root_dir)}/public_html"

@@ -1,2 +1,17 @@
 .accordion {
+    &__wrapper{
+        margin-top: 10px;
+        border-top: 2px solid white;
+      
+    }
+    &__content{
+        margin-top: 20px;
+        transition: height .4s ease-in-out;
+    }
+}
+
+.js-collapsed{
+    p{
+        display: none;
+    }
 }

@@ -9,9 +9,20 @@
     @extend .title;
     margin-bottom: 10px;
   }
+  &__wrapper{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
   &__text{
     @extend .text;
 
+  }
+  &__accordion{
+    @extend .text;
+    color: $primary;
+    margin-top: auto;
+    margin-bottom: 0;
   }
   &__image{
     aspect-ratio: 3/4;
