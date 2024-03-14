@@ -1,0 +1,47 @@
+defaultPlacement: end
+fieldLayouts:
+  1f6385fe-7f25-4952-ad81-18548a2472d1:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: c596009b-c879-4d06-a40b-1a0821612d43
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 4178ba71-3860-4054-b3aa-ecb321b602ee
+        userCondition: null
+handle: country
+name: Land
+siteSettings:
+  c0247ba7-b32e-4a5b-b2f9-ecab5f0e69dd: # yannik-blum.ch
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: null
+  uid: b0c10b96-a824-4de9-ba16-f4cf597e6bd9

@@ -1,4 +1,4 @@
-dateModified: 1710431924
+dateModified: 1710447369
 elementSources:
   craft\elements\Entry:
     -
@@ -59,6 +59,7 @@ meta:
     0be81558-7927-4e8f-866b-b3a571e4e8c2: 'Sekundäre Navigation' # Sekundäre Navigation
     0eb801cc-0c7b-4533-90ff-d758785b25fc: Sponsoren # Sponsoren
     0ef7fb56-4893-4452-80cc-dd9df41387ed: 'Module Titel' # Module Titel
+    03bf4c91-f4bf-44df-8694-ffe0aa37448c: Strecke # Strecke
     4baa41a2-cec9-4a44-832e-6d40c6726d78: 'About Bild' # About Bild
     4fe0479e-71f8-48ef-ab81-948b2edc8b8f: Standard # Standard
     5b0abf96-4f10-4320-814d-7b9f62898d3f: 'event Datum' # event Datum
@@ -66,22 +67,27 @@ meta:
     5d513d88-6ffc-4ad6-8ee2-c8ae0137f535: Dokumente # Dokumente
     6b8202d8-1e8d-41b4-b10c-f47ef291b1ca: Ort # Ort
     9e388fcf-7cd8-4076-af22-13a6e7dedbe7: 'Globale Inhalte' # Globale Inhalte
+    9e394522-d1cd-4f99-a197-8bed3c0737bc: Rennen # Rennen
     17d41138-4bf0-4b22-86e8-d485cbec1be8: 'Accordion Content' # Accordion Content
     31a937b4-18b3-4b48-850c-e633deff527c: Sponsor # Sponsor
     51aaa850-a0e4-41e3-8424-c86043bab5e0: Textfeld # Textfeld
     73d1fe0c-864c-493a-a7bf-533f0896afe9: event # event
     96f07d02-866d-40f3-8796-19cbbcd7f5a1: Videos # Videos
     97aaab66-2fcc-478f-af29-e43f238abb67: 'Kalender Liste' # Kalender Liste
+    178a575a-c218-4abd-b50e-653b2b230c70: Standard # Standard
     206b0441-3b56-4d0e-9491-0b8d30b4baed: SEO # SEO
     225e2c06-2164-4773-ba48-8967c3e93bbe: Inhaltsmodule # Inhaltsmodule
     225ee2f5-06df-4c35-9611-df9d463ebc6d: 'HI Base' # HI Base
     279f9783-d910-40f2-b93a-d8dce6282077: Datenschutzerklärung # Datenschutzerklärung
     389c95e4-78f4-4a84-ad75-d336434b410a: 'Abstand unten' # Abstand unten
+    508f0f63-cf47-4a8b-9460-8a3405fa506e: Land # Land
+    546e4777-41c8-4387-9b82-0f8d83ab4154: Land # Land
     669e2a7a-0c8c-4f09-ae3a-81ef311f8b72: Unterseiten # Unterseiten
     03689d2e-62bd-4a61-9f93-e75006143ccb: Autoren # Autoren
     4506ba97-f6aa-4c53-b507-65357f6e7931: 'Globale Inhalte' # Globale Inhalte
     5604af56-0f7c-4b78-94a4-9c0b816a28d2: Link # Link
     7316c507-ceab-482f-8a3e-0c96ce22f7d3: sponsorLink # sponsorLink
+    50033f52-8828-4621-8742-4044826897cd: Datum # Datum
     65842f65-1a65-4f40-b53e-dbf57fabee03: TypedLink # TypedLink
     81608c9a-6a8c-4809-a30c-31e0e49236f3: HeroBilder # HeroBilder
     95466e8e-061e-4884-8e39-4973bbecb164: Name # Name

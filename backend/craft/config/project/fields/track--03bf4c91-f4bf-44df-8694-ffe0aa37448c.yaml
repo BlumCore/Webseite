@@ -1,0 +1,19 @@
+columnSuffix: heyhtzsc
+contentColumnType: text
+fieldGroup: da1d4526-3f54-4890-bcae-4d569b18dc7a # Common
+handle: track
+instructions: null
+name: Strecke
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

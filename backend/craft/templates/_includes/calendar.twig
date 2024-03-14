@@ -6,8 +6,8 @@
             </div>
             <div class="gr-24 gr-12@small ">
             <ul>
-               {% for e in entry.calenderList %}
-                    <li class="calendar__li">{{ e.date|date("d.m.Y") }}, {{ e.event }}, {{ e.place}} </li>
+               {% for e in craft.entries().section('races').all() %}
+                    <li class="calendar__li">{{ e.date|date("d.m.Y") }}, {{ e.title }}, {{ e.track}} </li>
                {% endfor %}
                </ul>
             </div>

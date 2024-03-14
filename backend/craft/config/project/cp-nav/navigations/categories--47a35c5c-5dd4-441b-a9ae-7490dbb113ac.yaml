@@ -1,0 +1,17 @@
+currLabel: Kategorien
+customIcon: null
+enabled: true
+handle: categories
+icon: tree
+layout: d2eaac86-1ec9-4495-8b0d-2b96f0238762 # Default
+level: 1
+newWindow: false
+parent: null
+prevLabel: Kategorien
+prevLevel: 1
+prevParent: null
+prevUrl: categories
+sortOrder: 18
+subnavBehaviour: null
+type: craft
+url: categories

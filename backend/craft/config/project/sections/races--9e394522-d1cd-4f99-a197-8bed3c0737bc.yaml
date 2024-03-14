@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: true
+handle: races
+name: Rennen
+propagationMethod: all
+siteSettings:
+  c0247ba7-b32e-4a5b-b2f9-ecab5f0e69dd: # yannik-blum.ch
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: null
+  uid: 94507c59-e135-4e41-a431-9bf10a709ee7
+type: structure

@@ -1,0 +1,83 @@
+fieldLayouts:
+  2b467622-b16c-4193-a2b8-e1a0ea3e990b:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: df8a8af1-ce31-451d-aeaa-a138d32ac0d8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 03bf4c91-f4bf-44df-8694-ffe0aa37448c # Strecke
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 92cbd56d-6a2b-4c16-a81d-a755150c0c5e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 508f0f63-cf47-4a8b-9460-8a3405fa506e # Land
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 777c3c87-f8db-4c74-afd7-4c8ad2685eb0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 50033f52-8828-4621-8742-4044826897cd # Datum
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5d422f84-9092-4a3f-8805-0348a0f82b09
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 3b89ea46-1682-40bf-9f63-ffdf098be421
+        userCondition: null
+handle: default
+hasTitleField: true
+name: Standard
+section: 9e394522-d1cd-4f99-a197-8bed3c0737bc # Rennen
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

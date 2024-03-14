@@ -1,12 +1,38 @@
 .map{
     fill: $primary;
+    &__ch--races{
+        display: none;
+        margin-bottom: 20px;
+    }
+    &__fr--races{
+        display: none;
+        margin-bottom: 20px;
+    }
+    &__it--races{
+        display: none;
+        margin-bottom: 20px;
+    }
+    &__clicked{
+        fill: yellow;
+        stroke: $primary;
+        stroke-width: 10px;
+    }
+    &__display{
+        display: block;
+    }
     &__ch:hover{
         fill: yellow;
+        stroke: $primary;
+        stroke-width: 10px;
     }
     &__fr:hover{
         fill: yellow;
+        stroke: $primary;
+        stroke-width: 10px;
     }
     &__it:hover{
         fill: yellow;
+        stroke: $primary;
+        stroke-width: 10px;
     }
 }
