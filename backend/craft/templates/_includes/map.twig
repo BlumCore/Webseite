@@ -2,22 +2,23 @@
     <div class="container">
         <div class="row row-justify-center">
             <div class="gr-24 gr-20@small">
+            {% set races = craft.entries().section('races').orderBy("date").all() %}
               <div class="map__ch--races">
-                    {% for e in craft.entries().section('races').all() %}
+                    {% for e in races %}
                         {% if e.country.one().title == "Schweiz" %}
                         <div class="calendar__title">{{ e.date|date("d.m.Y") }}, {{ e.title }}, {{ e.track}} </div>
                         {% endif %}
                 {% endfor %}
                </div>
                <div class="map__it--races">
-                    {% for e in craft.entries().section('races').all() %}
+                    {% for e in races %}
                         {% if e.country.one().title == "Italien" %}
                         <div class="calendar__title">{{ e.date|date("d.m.Y") }}, {{ e.title }}, {{ e.track}} </div>
                         {% endif %}
                 {% endfor %}
                </div>
                <div class="map__fr--races">
-                    {% for e in craft.entries().section('races').all() %}
+                    {% for e in races %}
                         {% if e.country.one().title == "Frankreich" %}
                         <div class="calendar__title">{{ e.date|date("d.m.Y") }}, {{ e.title }}, {{ e.track}} </div>
                         {% endif %}
