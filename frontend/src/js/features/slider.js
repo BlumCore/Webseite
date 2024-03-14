@@ -9,14 +9,18 @@ import 'swiper/css/pagination';
 
 const swiper = new Swiper('.swiperHero', {
   modules: [Navigation, Pagination],
+  autoplay: {
+    delay: 4000,
+  },
 });
 
 const swiperImg = new Swiper('.swiperImg', {
   modules: [Navigation, Pagination],
-  slidesPerView: 1,
-  spaceBetween: 30,
   direction: "vertical",
-  slidesPerView: 1.1,
-  spaceBetween: 10,
+  slidesPerView: 1,
+  spaceBetween: 0,
   autoHeight: true,
+  autoplay: {
+    delay: 4000,
+  },
 });

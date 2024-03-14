@@ -45,6 +45,18 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: dd4e43a4-6639-4c2c-a836-c2dc70c91a40 # Hero Logo
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ac635126-b0c3-41bd-805d-ebd9e1d52132
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: 67368816-380f-4180-93db-1a1ff7fecf25 # Ueber mich
             instructions: null
             label: null

@@ -1,0 +1,12 @@
+.map{
+    fill: $primary;
+    &__ch:hover{
+        fill: yellow;
+    }
+    &__ch:hover + .map__text{
+        display: block;
+    }
+    &__text{
+        display: none;
+    }
+}

@@ -1,4 +1,4 @@
-dateModified: 1710066436
+dateModified: 1710431924
 elementSources:
   craft\elements\Entry:
     -
@@ -100,6 +100,7 @@ meta:
     d309d3ff-d436-4d54-b34e-49191bcdadbf: 'Globale Inhalte' # Globale Inhalte
     d2475e23-fe25-40e5-8e07-46ca1807882d: Home # Home
     da1d4526-3f54-4890-bcae-4d569b18dc7a: Common # Common
+    dd4e43a4-6639-4c2c-a836-c2dc70c91a40: 'Hero Logo' # Hero Logo
     ddd3a7a3-b9f0-496e-a303-193beae58035: Links # Links
     de149324-4447-4974-bf8b-b8e05b5f25e2: Sponsor # Sponsor
     df122fe4-2195-47e9-8049-a601db27ef96: Modules # Modules

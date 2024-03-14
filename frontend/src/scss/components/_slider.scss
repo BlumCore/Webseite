@@ -1,17 +1,18 @@
 .swiper {
   &-wrapper {
-    height: 100vh !important;
+    height: 100%;
     position: relative;
   }
-  &__slider {
-
+  &-slide {
+    height: 100% !important;
   }
+  &__slider {}
 }
 
-.slider{
-  &__image{
-    padding-bottom: 10px;
-    img{
+.slider {
+
+  &__image {
+    img {
       object-fit: cover;
       width: 100%;
       aspect-ratio: 16/9;
