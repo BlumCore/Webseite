@@ -1,18 +1,18 @@
 {
   "src/js/main-legacy.js": {
-    "file": "assets/main-legacy-96b8752e.js",
+    "file": "assets/main-legacy-53ed08ee.js",
     "isEntry": true,
     "src": "src/js/main-legacy.js"
   },
   "src/js/main.css": {
-    "file": "assets/main-b7e2d692.css",
+    "file": "assets/main-91fb0657.css",
     "src": "src/js/main.css"
   },
   "src/js/main.js": {
     "css": [
-      "assets/main-b7e2d692.css"
+      "assets/main-91fb0657.css"
     ],
-    "file": "assets/main-4b249aed.js",
+    "file": "assets/main-892d4df0.js",
     "isEntry": true,
     "src": "src/js/main.js"
   },
